@@ -20,7 +20,7 @@ import { Image } from '../../models/image';
    */
 })
 export class ImageComponent implements OnInit {
-  @Input() imageGus:Image;
+  @Input() imageInput:Image;
   constructor() { }
 
   ngOnInit() {

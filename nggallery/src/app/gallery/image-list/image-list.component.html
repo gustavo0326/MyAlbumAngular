@@ -1,5 +1,9 @@
 <div class="container">
+  <!--con esto le decia del objeto imagesGus coloquelo en el input image-->
+  <!-- <ng-image [image]="imageGus"></ng-image> -->
   <div class="row">
-    <ng-image [imageGus]="imageGus"></ng-image>
+      <ng-image [imageInput]="imageGus"></ng-image>
+    <!--con esta instrucción le digo con el verbo let dejar ...dejar en el input images de la lista de imagenes declarada en el componente image-list-->
+    <ng-image *ngFor = "let images of imagesList"[imageInput]="images"></ng-image>
   </div>
 </div>
